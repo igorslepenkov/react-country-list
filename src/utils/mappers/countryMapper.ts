@@ -1,4 +1,4 @@
-import { ICountry, ICountryData } from "../../types";
+import { ICountry, ICountryApi } from "../../types";
 
 const trasformCountry = ({
   name,
@@ -7,7 +7,7 @@ const trasformCountry = ({
   flags,
   area,
   region,
-}: ICountryData): ICountry => {
+}: ICountryApi): ICountry => {
   const newCountry: ICountry = {
     name: name.common,
     capital,
@@ -20,6 +20,6 @@ const trasformCountry = ({
   return newCountry;
 };
 
-export const countriesMapper = (countries: ICountryData[]): ICountry[] => {
+export const transformCountries = (countries: ICountryApi[]): ICountry[] => {
   return countries.map(trasformCountry);
 };

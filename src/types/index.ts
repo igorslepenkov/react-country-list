@@ -9,7 +9,7 @@ export interface ICountry {
   region: string;
 }
 
-export interface ICountryData {
+export interface ICountryApi {
   name: { common: string };
   capital: string[];
   population: number;

@@ -1,9 +1,9 @@
 import { CountryList } from "./components/CountryList";
 import countries from "./data/country-data.json";
-import { countriesMapper } from "./utils/mappers/";
+import { transformCountries } from "./utils/mappers/";
 
 function App() {
-  const transformedCountries = countriesMapper(countries);
+  const transformedCountries = transformCountries(countries);
 
   return (
     <div className="container">

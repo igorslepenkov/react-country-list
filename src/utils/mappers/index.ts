@@ -1,2 +1,2 @@
-import { countriesMapper } from "./countryMapper";
-export { countriesMapper };
+import { transformCountries } from "./countryMapper";
+export { transformCountries };
